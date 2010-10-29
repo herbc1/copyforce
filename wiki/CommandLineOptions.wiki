@@ -3,15 +3,13 @@
 
 This page documents the command line syntax for all versions of CopyForce.
 
+The switches common to all database versions are listed first, followed by database
+specific switches.
+
 
 = Common Switches =
-Copy a Salesforce database to another database, creating the schema on the destination database as required.
- <p> 
-CopyForce copies the schema and data from any Salesforce database to another database. Both complete and incremental copying are supported.
-This particular class contains the parameters and control mechanisms that are common to all instances of CopyForce. There is always a concrete
-class that extends this class for each particular designation database (example: CopyForceH2, CopyForceSqlServer).
-<p>
-The following command line switches are supported by all concrete implementations:
+
+The following command line switches are supported by all concrete implementations of CopyForce:
  
 <table border="2">
   <tr align="left" valign="top">
@@ -126,7 +124,7 @@ The CopyForceH2.jar version adds the following command line switches.
    </tr>
    </table>
 = Configuration Files =
- The list of objects copied from Salesforce can optionally be controlled by a configuration file (see the -config command line switch). A configuration file
+The list of objects copied from Salesforce can optionally be controlled by a configuration file (see the -config command line switch). A configuration file
   must be in the following form:
 {{{
   <CopyForce>
