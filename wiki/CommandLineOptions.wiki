@@ -1,7 +1,7 @@
 #labels Featured
 = CopyForce Command Line -- All Database Versions =
 
-This page commands the command line syntax for all versions of CopyForce as of 29-Oct-2010.
+This page documents the command line syntax for all versions of CopyForce.
 
 
 = Common Switches =
